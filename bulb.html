@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulb On Off</title>
+    <style>
+        body {
+            background-color: black;
+        }
+        .on_off{
+            width: 130px;
+            height: 40px;
+            border: 2px solid black;
+            border-radius: 14px;
+            padding:32px 16px 32px 16px ;
+            display: flex;
+            background-color:white;
+            margin-left: 900px;
+            margin-top: 200px;
+        }
+        button{
+            width: 60px;
+            height: 80px;
+            margin-top: -15px;
+        }
+        img{
+            margin-top: 40px;
+            opacity: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="on_off">
+        <button onclick="bulb_on()" style="margin-left: 5px; background-color: rgb(92, 196, 92);">ON</button><br><br>
+        <button onclick="bulb_off()" style="margin-left: 10px; background-color: rgb(199, 62, 62);">OFF</button>
+    </div>
+    <img src="https://joy.videvo.net/videvo_files/video/premium/partners0347/thumbnails/BB_26993b03-ff06-48f8-b36a-c187e623fe8a_small.jpg" alt="bulboff" id="bulb">
+    <script>
+        function bulb_on(){
+            let BULB=document.getElementById("bulb");
+            document.getElementById("bulb").src="https://joy.videvo.net/videvo_files/video/premium/partners0347/thumbnails/BB_26993b03-ff06-48f8-b36a-c187e623fe8a_small.jpg";
+            BULB.style.opacity=1;
+        }
+        function bulb_off(){
+            let BULB=document.getElementById("bulb");
+            document.getElementById("bulb").src="https://joy.videvo.net/videvo_files/video/premium/partners0347/thumbnails/BB_26993b03-ff06-48f8-b36a-c187e623fe8a_small.jpg";
+            BULB.style.opacity=0;
+        }
+    </script>
+</body>
+</html>
